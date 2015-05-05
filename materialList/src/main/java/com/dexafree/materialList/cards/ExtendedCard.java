@@ -4,15 +4,18 @@ import android.content.Context;
 import com.dexafree.materialList.events.BusProvider;
 
 /**
- * The ExtendedCard set two Buttons (right and left).
+ * The ExtendedCard set thre Buttons (right, middle and left).
  */
 public abstract class ExtendedCard extends SimpleCard {
     protected String leftButtonText;
+    protected String middleButtonText;
     protected String rightButtonText;
     protected int mRightButtonTextColor = -1;
     protected int mLeftButtonTextColor = -1;
+    protected int mMiddleButtonTextColor = -1;
     protected OnButtonPressListener onLeftButtonPressedListener;
     protected OnButtonPressListener onRightButtonPressedListener;
+    protected OnButtonPressListener onMiddleButtonPressedListener;
     protected boolean dividerVisible = false;
     protected boolean fullWidthDivider = false;
 
@@ -30,6 +33,19 @@ public abstract class ExtendedCard extends SimpleCard {
 
     public void setLeftButtonText(String leftButtonText) {
         this.leftButtonText = leftButtonText;
+        BusProvider.dataSetChanged();
+    }
+
+    public String getMiddleButtonText() {
+        return middleButtonText;
+    }
+
+    public void setMiddleButtonText(int middleButtonTextId) {
+        setMiddleButtonText(getString(middleButtonTextId));
+    }
+
+    public void setMiddleButtonText(String middleButtonText) {
+        this.middleButtonText = middleButtonText;
         BusProvider.dataSetChanged();
     }
 
@@ -72,6 +88,19 @@ public abstract class ExtendedCard extends SimpleCard {
         setLeftButtonTextColor(getResources().getColor(colorId));
     }
 
+    public int getMiddleButtonTextColor() {
+        return mMiddleButtonTextColor;
+    }
+
+    public void setMiddleButtonTextColor(int color) {
+        this.mMiddleButtonTextColor = color;
+        BusProvider.dataSetChanged();
+    }
+
+    public void setMiddleButtonTextColorRes(int colorId) {
+        setMiddleButtonTextColor(getResources().getColor(colorId));
+    }
+
     public boolean isDividerVisible() {
         return dividerVisible;
     }
@@ -104,5 +133,13 @@ public abstract class ExtendedCard extends SimpleCard {
 
     public void setOnRightButtonPressedListener(OnButtonPressListener onRightButtonPressedListener) {
         this.onRightButtonPressedListener = onRightButtonPressedListener;
+    }
+
+    public OnButtonPressListener getOnMiddleButtonPressedListener() {
+        return onMiddleButtonPressedListener;
+    }
+
+    public void setOnMiddleButtonPressedListener(OnButtonPressListener onMiddleButtonPressedListener) {
+        this.onMiddleButtonPressedListener = onMiddleButtonPressedListener;
     }
 }
