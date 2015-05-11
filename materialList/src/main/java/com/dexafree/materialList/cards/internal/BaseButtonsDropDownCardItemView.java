@@ -77,24 +77,24 @@ public abstract class BaseButtonsDropDownCardItemView<T extends ExtendedCard> ex
         });
 
         // Right Button - Image
-        final ImageButton rightText = (ImageButton) findViewById(R.id.right_image_button);
+        final ImageButton rightImageButton = (ImageButton) findViewById(R.id.right_image_button);
 
 //        int rightColor = card.getRightButtonTextColor();
 //
 //        if(rightColor != -1){
-//            rightText.setTextColor(rightColor);
+//            rightImageButton.setTextColor(rightColor);
 //        }
 //
-//        rightText.setText(card.getRightButtonText().toUpperCase());
+//        rightImageButton.setText(card.getRightButtonText().toUpperCase());
 //        if (card.getRightButtonTextColor() > -1) {
-//            rightText.setTextColor(card.getRightButtonTextColor());
+//            rightImageButton.setTextColor(card.getRightButtonTextColor());
 //        }
-        rightText.setOnClickListener(new OnClickListener() {
+        rightImageButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 OnButtonPressListener listener = card.getOnRightButtonPressedListener();
-                if(listener != null) {
-                    listener.onButtonPressedListener(rightText, card);
+                if (listener != null) {
+                    listener.onButtonPressedListener(rightImageButton, card);
                 }
             }
         });
