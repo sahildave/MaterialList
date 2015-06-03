@@ -22,7 +22,7 @@
                 android:textSize="@dimen/title_size"
                 android:id="@+id/titleTextView"
                 android:textColor="@color/black_button"
-                android:padding="@dimen/big_padding"
+                android:padding="@dimen/padding_16dp"
                 tools:text="Title"/>
 
             <LinearLayout
@@ -34,7 +34,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:id="@+id/imageView"
-                    android:padding="@dimen/big_padding"
+                    android:padding="@dimen/padding_16dp"
                     android:contentDescription="@null"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"/>
@@ -43,7 +43,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/descriptionTextView"
-                    android:padding="@dimen/big_padding"
+                    android:padding="@dimen/padding_16dp"
                     android:textSize="@dimen/description_size"
                     android:textColor="@color/description_color"
                     tools:text="Lorem ipsum dolor sit amet"/>

@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/descriptionTextView"
                 android:textColor="@color/description_color"
-                android:padding="@dimen/big_padding"
+                android:padding="@dimen/padding_16dp"
                 android:textSize="@dimen/description_size"
                 android:layout_below="@+id/imageView"
                 tools:text="Test description"/>

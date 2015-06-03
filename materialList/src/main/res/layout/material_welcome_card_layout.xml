@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/titleTextView"
-                android:padding="@dimen/big_padding"
+                android:padding="@dimen/padding_16dp"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/bigger_title_size"
                 tools:text="This is the title"/>
@@ -30,9 +30,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/subtitleTextView"
                 android:textColor="@color/description_color"
-                android:paddingTop="@dimen/small_padding"
-                android:paddingLeft="@dimen/big_padding"
-                android:paddingRight="@dimen/big_padding"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingRight="@dimen/padding_16dp"
                 android:textSize="@dimen/subtitle_size"
                 android:textStyle="bold"
                 tools:text="I am the subtitle"/>
@@ -42,10 +42,10 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/descriptionTextView"
                 android:textColor="@color/description_color"
-                android:paddingBottom="@dimen/big_padding"
-                android:paddingRight="@dimen/big_padding"
-                android:paddingLeft="@dimen/big_padding"
-                android:paddingTop="@dimen/small_padding"
+                android:paddingBottom="@dimen/padding_16dp"
+                android:paddingRight="@dimen/padding_16dp"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingTop="@dimen/padding_8dp"
                 android:textSize="@dimen/description_size"
                 tools:text="And this is the description"/>
 
@@ -54,8 +54,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:background="@color/divider_white"
-                android:layout_marginLeft="@dimen/big_padding"
-                android:layout_marginRight="@dimen/big_padding"
+                android:layout_marginLeft="@dimen/padding_16dp"
+                android:layout_marginRight="@dimen/padding_16dp"
                 android:visibility="visible"/>
 
             <TextView
@@ -65,9 +65,9 @@
                 android:clickable="true"
                 android:focusable="false"
                 android:textStyle="bold"
-                android:padding="@dimen/big_padding"
+                android:padding="@dimen/padding_16dp"
                 android:drawableLeft="@drawable/ic_check"
-                android:drawablePadding="@dimen/big_padding"
+                android:drawablePadding="@dimen/padding_16dp"
                 style="@style/LeftButtonBaseStyle"
                 tools:text="CLICK ME"/>
         </LinearLayout>

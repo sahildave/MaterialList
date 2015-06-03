@@ -37,9 +37,9 @@
                 android:layout_below="@+id/titleTextView"
                 android:layout_alignLeft="@+id/titleTextView"
                 android:id="@+id/descriptionTextView"
-                android:paddingLeft="@dimen/big_padding"
-                android:paddingBottom="@dimen/big_padding"
-                android:paddingRight="@dimen/big_padding"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingBottom="@dimen/padding_16dp"
+                android:paddingRight="@dimen/padding_16dp"
                 tools:text="By Alex Nelson"/>
 
             <view

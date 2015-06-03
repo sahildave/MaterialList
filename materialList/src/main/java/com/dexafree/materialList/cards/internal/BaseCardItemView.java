@@ -7,9 +7,10 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.MyRoundRectDrawableWithShadow;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+
+import com.dexafree.materialList.R;
 import com.dexafree.materialList.cards.BasicCard;
 import com.dexafree.materialList.model.CardItemView;
-import com.dexafree.materialList.R;
 
 public abstract class BaseCardItemView<T extends BasicCard> extends CardItemView<T> {
 

@@ -4,7 +4,6 @@ package com.dexafree.materialList.cards;
 import android.content.Context;
 
 import com.dexafree.materialList.R;
-import com.dexafree.materialList.cards.ExtendedCard;
 
 public class BasicButtonsDropDownCard extends ExtendedCard {
     public BasicButtonsDropDownCard(final Context context) {

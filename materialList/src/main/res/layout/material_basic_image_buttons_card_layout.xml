@@ -46,9 +46,9 @@
                     android:textColor="@color/description_color"
                     android:textSize="@dimen/description_size"
                     android:id="@+id/descriptionTextView"
-                    android:paddingLeft="@dimen/big_padding"
-                    android:paddingBottom="@dimen/big_padding"
-                    android:paddingRight="@dimen/big_padding"
+                    android:paddingLeft="@dimen/padding_16dp"
+                    android:paddingBottom="@dimen/padding_16dp"
+                    android:paddingRight="@dimen/padding_16dp"
                     tools:text="By Alex Nelson"/>
 
                 <View
@@ -69,10 +69,10 @@
                         android:textColor="@color/black_button"
                         android:textSize="@dimen/button_size"
                         android:id="@+id/left_text_button"
-                        android:paddingLeft="@dimen/big_padding"
-                        android:paddingRight="@dimen/small_padding"
-                        android:paddingBottom="@dimen/big_padding"
-                        android:paddingTop="@dimen/big_padding"
+                        android:paddingLeft="@dimen/padding_16dp"
+                        android:paddingRight="@dimen/padding_8dp"
+                        android:paddingBottom="@dimen/padding_16dp"
+                        android:paddingTop="@dimen/padding_16dp"
                         android:textStyle="bold"
                         tools:text="Free sample"/>
 
@@ -82,10 +82,10 @@
                         android:id="@+id/right_text_button"
                         android:textColor="@color/orange_button"
                         android:textSize="@dimen/button_size"
-                        android:paddingLeft="@dimen/small_padding"
-                        android:paddingTop="@dimen/big_padding"
-                        android:paddingRight="@dimen/big_padding"
-                        android:paddingBottom="@dimen/big_padding"
+                        android:paddingLeft="@dimen/padding_8dp"
+                        android:paddingTop="@dimen/padding_16dp"
+                        android:paddingRight="@dimen/padding_16dp"
+                        android:paddingBottom="@dimen/padding_16dp"
                         android:textStyle="bold"
                         tools:text="Review"/>
                 </LinearLayout>
