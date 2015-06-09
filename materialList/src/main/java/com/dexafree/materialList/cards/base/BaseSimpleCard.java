@@ -6,9 +6,9 @@ import android.graphics.drawable.Drawable;
 import com.dexafree.materialList.events.BusProvider;
 
 /**
- * The SimpleCard defines a title, description and (if it is set on the layout) an image.
+ * The BaseSimpleCard defines a title, description and (if it is set on the layout) an image.
  */
-public abstract class SimpleCard extends BasicCard {
+public abstract class BaseSimpleCard extends BaseBasicCard {
     private String mTitle;
     private int mTitleColor = -1;
     private String mDescription;
@@ -16,7 +16,7 @@ public abstract class SimpleCard extends BasicCard {
     private Drawable mDrawable;
     private String urlImage;
 
-    public SimpleCard(Context context) {
+    public BaseSimpleCard(Context context) {
         super(context);
     }
 

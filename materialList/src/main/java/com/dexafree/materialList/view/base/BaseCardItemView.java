@@ -6,10 +6,10 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 
 import com.dexafree.materialList.R;
-import com.dexafree.materialList.cards.base.BasicCard;
+import com.dexafree.materialList.cards.base.BaseBasicCard;
 import com.dexafree.materialList.model.CardItemView;
 
-public abstract class BaseCardItemView<T extends BasicCard> extends CardItemView<T> {
+public abstract class BaseCardItemView<T extends BaseBasicCard> extends CardItemView<T> {
 
     public BaseCardItemView(Context context) {
         super(context);

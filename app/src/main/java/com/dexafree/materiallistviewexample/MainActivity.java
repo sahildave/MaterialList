@@ -11,16 +11,16 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.dexafree.materialList.cards.BasicButtonsCard;
+import com.dexafree.materialList.cards.BasicButtonsDropDownCard;
 import com.dexafree.materialList.cards.BasicImageButtonsCard;
 import com.dexafree.materialList.cards.BasicListCard;
 import com.dexafree.materialList.cards.BigImageButtonsCard;
 import com.dexafree.materialList.cards.BigImageCard;
-import com.dexafree.materialList.interfaces.OnButtonPressListener;
-import com.dexafree.materialList.cards.base.SimpleCard;
-import com.dexafree.materialList.cards.SmallImageCard;
 import com.dexafree.materialList.cards.WelcomeCard;
-import com.dexafree.materialList.interfaces.OnDismissCallback;
+import com.dexafree.materialList.cards.base.BaseSimpleCard;
 import com.dexafree.materialList.controller.RecyclerItemClickListener;
+import com.dexafree.materialList.interfaces.OnButtonPressListener;
+import com.dexafree.materialList.interfaces.OnDismissCallback;
 import com.dexafree.materialList.model.Card;
 import com.dexafree.materialList.model.CardItemView;
 import com.dexafree.materialList.view.MaterialListView;
@@ -85,18 +85,19 @@ public class MainActivity extends ActionBarActivity {
 
         int type = position % 6;
 
-        SimpleCard card;
+        BaseSimpleCard card;
         Drawable icon;
 
         switch (type) {
 
             case 0:
-                card = new SmallImageCard(this);
+                card = new BasicButtonsDropDownCard(this);
                 card.setDescription(description);
                 card.setTitle(title);
-                card.setDrawable(R.drawable.ic_launcher);
-                card.setDismissible(true);
-                card.setTag("SMALL_IMAGE_CARD");
+                card.setDrawable(R.drawable.dog);
+                card.setTag("BASIC_DROP_DOWN_CARD");
+                ((BasicButtonsDropDownCard) card).setLeftButtonText("LEFT");
+                ((BasicButtonsDropDownCard) card).setMiddleButtonText("MIDDLE");
                 return card;
 
             case 1:
@@ -124,14 +125,14 @@ public class MainActivity extends ActionBarActivity {
                     @Override
                     public void onButtonPressedListener(View view, Card card) {
                         Toast.makeText(mContext, "You have pressed the left button", Toast.LENGTH_SHORT).show();
-                        ((SimpleCard) card).setTitle("CHANGED ON RUNTIME");
+                        ((BaseSimpleCard) card).setTitle("CHANGED ON RUNTIME");
                     }
                 });
 
                 ((BasicImageButtonsCard) card).setOnRightButtonPressedListener(new OnButtonPressListener() {
                     @Override
                     public void onButtonPressedListener(View view, Card card) {
-                        Toast.makeText(mContext, "You have pressed the right button on card " + ((SimpleCard) card).getTitle(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, "You have pressed the right button on card " + ((BaseSimpleCard) card).getTitle(), Toast.LENGTH_SHORT).show();
                         mListView.remove(card);
                     }
                 });
@@ -250,7 +251,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private Card generateNewCard() {
-        SimpleCard card = new BasicImageButtonsCard(this);
+        BaseSimpleCard card = new BasicImageButtonsCard(this);
         card.setDrawable(R.drawable.dog);
         card.setTitle("I'm new");
         card.setDescription("I've been generated on runtime!");

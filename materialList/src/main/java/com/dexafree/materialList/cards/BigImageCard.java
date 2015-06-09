@@ -2,9 +2,9 @@ package com.dexafree.materialList.cards;
 
 import android.content.Context;
 import com.dexafree.materialList.R;
-import com.dexafree.materialList.cards.base.SimpleCard;
+import com.dexafree.materialList.cards.base.BaseSimpleCard;
 
-public class BigImageCard extends SimpleCard {
+public class BigImageCard extends BaseSimpleCard {
     public BigImageCard(final Context context) {
         super(context);
     }

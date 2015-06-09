@@ -6,11 +6,11 @@ import android.graphics.Color;
 import com.dexafree.materialList.events.BusProvider;
 import com.dexafree.materialList.model.Card;
 
-public abstract class BasicCard extends Card {
+public abstract class BaseBasicCard extends Card {
     private final Context mContext;
     private int mBackgroundColor = Color.WHITE;
 
-    public BasicCard(Context context) {
+    public BaseBasicCard(Context context) {
         mContext = context;
     }
 

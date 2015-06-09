@@ -1,16 +1,15 @@
 package com.dexafree.materialList.view.base;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.dexafree.materialList.cards.base.SimpleCard;
+
 import com.dexafree.materialList.R;
+import com.dexafree.materialList.cards.base.BaseSimpleCard;
 import com.squareup.picasso.Picasso;
 
-public abstract class BaseTextCardItemView<T extends SimpleCard> extends BaseCardItemView<T> {
+public abstract class BaseTextCardItemView<T extends BaseSimpleCard> extends BaseCardItemView<T> {
     public BaseTextCardItemView(Context context) {
         super(context);
     }
@@ -19,7 +18,6 @@ public abstract class BaseTextCardItemView<T extends SimpleCard> extends BaseCar
         super(context, attrs);
     }
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public BaseTextCardItemView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }

@@ -2,16 +2,16 @@ package com.dexafree.materialList.cards.base;
 
 import android.content.Context;
 
-import com.dexafree.materialList.interfaces.OnButtonPressListener;
 import com.dexafree.materialList.events.BusProvider;
+import com.dexafree.materialList.interfaces.OnButtonPressListener;
 
 /**
- * The ThreeButtonsCard set thre Buttons (right, middle and left).
+ * The BaseThreeButtonsCard set thre Buttons (right, middle and left).
  */
-public abstract class ThreeButtonsCard extends SimpleCard {
-    protected String leftButtonText;
-    protected String middleButtonText;
-    protected String rightButtonText;
+public abstract class BaseThreeButtonsCard extends BaseSimpleCard {
+    protected String leftButtonText="";
+    protected String middleButtonText="";
+    protected String rightButtonText="";
     protected int mRightButtonTextColor = -1;
     protected int mLeftButtonTextColor = -1;
     protected int mMiddleButtonTextColor = -1;
@@ -21,7 +21,7 @@ public abstract class ThreeButtonsCard extends SimpleCard {
     protected boolean dividerVisible = false;
     protected boolean fullWidthDivider = false;
 
-    public ThreeButtonsCard(final Context context) {
+    public BaseThreeButtonsCard(final Context context) {
         super(context);
     }
 

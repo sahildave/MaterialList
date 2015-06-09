@@ -34,56 +34,11 @@
                 android:textSize="@dimen/description_size"
                 tools:text="And this is the description"/>
 
-            <View
-                android:id="@+id/cardDivider"
-                android:layout_width="fill_parent"
-                android:layout_height="1px"
-                android:background="@color/divider_grey"
-                android:layout_below="@+id/descriptionTextView"
-                android:layout_alignLeft="@+id/titleTextView"
-                android:layout_alignStart="@+id/titleTextView"
-                android:visibility="invisible"/>
-
-
-            <TextView
-                android:layout_width="wrap_content"
+            <include
+                layout="@layout/material_basic_three_button_panel"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/left_text_button"
-                android:layout_below="@+id/descriptionTextView"
-                android:layout_marginTop="@dimen/padding_8dp"
-                android:layout_marginBottom="@dimen/padding_8dp"
-                android:paddingLeft="@dimen/padding_16dp"
-                android:paddingTop="@dimen/padding_16dp"
-                android:paddingBottom="@dimen/padding_16dp"
-                android:paddingRight="@dimen/padding_8dp"
-                style="@style/LeftButtonBaseStyle"
-                tools:text="LEFT BUTTON"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/middle_text_button"
-                android:paddingLeft="@dimen/padding_8dp"
-                android:paddingTop="@dimen/padding_16dp"
-                android:paddingRight="@dimen/padding_16dp"
-                android:paddingBottom="@dimen/padding_16dp"
-                android:layout_toRightOf="@+id/left_text_button"
-                android:layout_alignTop="@+id/left_text_button"
-                style="@style/MiddleButtonBaseStyle"
-                tools:text="MIDDLE BUTTON"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/right_text_button"
-                android:paddingLeft="@dimen/padding_8dp"
-                android:paddingTop="@dimen/padding_16dp"
-                android:paddingRight="@dimen/padding_16dp"
-                android:paddingBottom="@dimen/padding_16dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignTop="@+id/left_text_button"
-                style="@style/RightButtonBaseStyle"
-                tools:text="RIGHT BUTTON"/>
+                android:layout_below="@id/descriptionTextView"/>
 
         </RelativeLayout>
 

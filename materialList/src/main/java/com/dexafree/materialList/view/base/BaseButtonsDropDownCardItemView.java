@@ -1,18 +1,16 @@
 package com.dexafree.materialList.view.base;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.dexafree.materialList.R;
-import com.dexafree.materialList.cards.base.ThreeButtonsCard;
+import com.dexafree.materialList.cards.base.BaseThreeButtonsCard;
 import com.dexafree.materialList.interfaces.OnButtonPressListener;
 
-public abstract class BaseButtonsDropDownCardItemView<T extends ThreeButtonsCard> extends BaseTextCardItemView<T> {
+public abstract class BaseButtonsDropDownCardItemView<T extends BaseThreeButtonsCard> extends BaseTextCardItemView<T> {
     private final static int DIVIDER_MARGIN_DP = 16;
 
     public BaseButtonsDropDownCardItemView(Context context) {
@@ -23,7 +21,6 @@ public abstract class BaseButtonsDropDownCardItemView<T extends ThreeButtonsCard
         super(context, attrs);
     }
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public BaseButtonsDropDownCardItemView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
@@ -78,17 +75,6 @@ public abstract class BaseButtonsDropDownCardItemView<T extends ThreeButtonsCard
 
         // Right Button - Image
         final ImageButton rightImageButton = (ImageButton) findViewById(R.id.right_image_button);
-
-//        int rightColor = card.getRightButtonTextColor();
-//
-//        if(rightColor != -1){
-//            rightImageButton.setTextColor(rightColor);
-//        }
-//
-//        rightImageButton.setText(card.getRightButtonText().toUpperCase());
-//        if (card.getRightButtonTextColor() > -1) {
-//            rightImageButton.setTextColor(card.getRightButtonTextColor());
-//        }
         rightImageButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {

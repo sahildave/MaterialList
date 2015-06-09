@@ -51,44 +51,11 @@
                     android:paddingRight="@dimen/padding_16dp"
                     tools:text="By Alex Nelson"/>
 
-                <View
-                    android:id="@+id/cardDivider"
-                    android:layout_width="fill_parent"
-                    android:layout_height="1px"
-                    android:background="@color/divider_grey"
-                    android:visibility="invisible"/>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black_button"
-                        android:textSize="@dimen/button_size"
-                        android:id="@+id/left_text_button"
-                        android:paddingLeft="@dimen/padding_16dp"
-                        android:paddingRight="@dimen/padding_8dp"
-                        android:paddingBottom="@dimen/padding_16dp"
-                        android:paddingTop="@dimen/padding_16dp"
-                        android:textStyle="bold"
-                        tools:text="Free sample"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/right_text_button"
-                        android:textColor="@color/orange_button"
-                        android:textSize="@dimen/button_size"
-                        android:paddingLeft="@dimen/padding_8dp"
-                        android:paddingTop="@dimen/padding_16dp"
-                        android:paddingRight="@dimen/padding_16dp"
-                        android:paddingBottom="@dimen/padding_16dp"
-                        android:textStyle="bold"
-                        tools:text="Review"/>
-                </LinearLayout>
+               <include
+                layout="@layout/material_basic_two_button_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionTextView"/>
 
             </LinearLayout>
         </LinearLayout>

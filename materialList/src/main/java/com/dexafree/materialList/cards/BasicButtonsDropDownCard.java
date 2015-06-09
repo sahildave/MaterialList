@@ -4,9 +4,9 @@ package com.dexafree.materialList.cards;
 import android.content.Context;
 
 import com.dexafree.materialList.R;
-import com.dexafree.materialList.cards.base.ThreeButtonsCard;
+import com.dexafree.materialList.cards.base.BaseThreeButtonsCard;
 
-public class BasicButtonsDropDownCard extends ThreeButtonsCard {
+public class BasicButtonsDropDownCard extends BaseThreeButtonsCard {
     public BasicButtonsDropDownCard(final Context context) {
         super(context);
     }

@@ -3,10 +3,10 @@ package com.dexafree.materialList.cards;
 import android.content.Context;
 import android.graphics.Color;
 import com.dexafree.materialList.R;
-import com.dexafree.materialList.cards.base.SimpleCard;
+import com.dexafree.materialList.cards.base.BaseSimpleCard;
 import com.dexafree.materialList.interfaces.OnButtonPressListener;
 
-public class WelcomeCard extends SimpleCard {
+public class WelcomeCard extends BaseSimpleCard {
     private String subtitle;
     private String buttonText;
     private OnButtonPressListener mListener;

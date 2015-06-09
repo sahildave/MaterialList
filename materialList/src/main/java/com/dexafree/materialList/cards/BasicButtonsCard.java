@@ -2,10 +2,11 @@ package com.dexafree.materialList.cards;
 
 
 import android.content.Context;
-import com.dexafree.materialList.R;
-import com.dexafree.materialList.cards.base.ThreeButtonsCard;
 
-public class BasicButtonsCard extends ThreeButtonsCard {
+import com.dexafree.materialList.R;
+import com.dexafree.materialList.cards.base.BaseThreeButtonsCard;
+
+public class BasicButtonsCard extends BaseThreeButtonsCard {
     public BasicButtonsCard(final Context context) {
         super(context);
     }
