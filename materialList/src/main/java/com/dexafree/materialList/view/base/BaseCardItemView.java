@@ -29,7 +29,7 @@ public abstract class BaseCardItemView<T extends BaseBasicCard> extends CardItem
         CardView cardView = (CardView) findViewById(R.id.cardView);
 
         if (cardView != null) {
-                cardView.setBackgroundColor(card.getBackgroundColor());
+                cardView.setCardBackgroundColor(card.getBackgroundColor());
                 cardView.setCardElevation(dpToPx(6));
         }
     }
