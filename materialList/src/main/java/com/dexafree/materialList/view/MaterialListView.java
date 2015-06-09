@@ -11,9 +11,9 @@ import android.util.AttributeSet;
 import android.util.Log;
 
 import com.dexafree.materialList.R;
-import com.dexafree.materialList.controller.IMaterialListAdapter;
+import com.dexafree.materialList.interfaces.IMaterialListAdapter;
 import com.dexafree.materialList.controller.MaterialListAdapter;
-import com.dexafree.materialList.controller.OnDismissCallback;
+import com.dexafree.materialList.interfaces.OnDismissCallback;
 import com.dexafree.materialList.controller.RecyclerItemClickListener;
 import com.dexafree.materialList.controller.SwipeDismissRecyclerViewTouchListener;
 import com.dexafree.materialList.events.BusProvider;

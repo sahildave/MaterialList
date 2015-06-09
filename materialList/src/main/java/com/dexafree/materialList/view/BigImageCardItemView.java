@@ -1,10 +1,11 @@
-package com.dexafree.materialList.cards.internal;
+package com.dexafree.materialList.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import com.dexafree.materialList.cards.BigImageCard;
+import com.dexafree.materialList.view.base.BaseTextCardItemView;
 
-public class BigImageCardItemView<T extends BigImageCard> extends BaseTextCardItemView<T>{
+public class BigImageCardItemView<T extends BigImageCard> extends BaseTextCardItemView<T> {
     public BigImageCardItemView(Context context) {
         super(context);
     }

@@ -1,4 +1,4 @@
-package com.dexafree.materialList.cards.internal;
+package com.dexafree.materialList.view;
 
 import android.content.Context;
 import android.database.DataSetObserver;
@@ -11,6 +11,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.dexafree.materialList.cards.BasicListCard;
 import com.dexafree.materialList.R;
+import com.dexafree.materialList.view.base.BaseTextCardItemView;
 import com.nhaarman.listviewanimations.itemmanipulation.DynamicListView;
 
 public class BasicListCardItemView extends BaseTextCardItemView<BasicListCard> {

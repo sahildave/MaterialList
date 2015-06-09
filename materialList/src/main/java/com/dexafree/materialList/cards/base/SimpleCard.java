@@ -1,4 +1,4 @@
-package com.dexafree.materialList.cards;
+package com.dexafree.materialList.cards.base;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

@@ -3,6 +3,8 @@ package com.dexafree.materialList.cards;
 import android.content.Context;
 import android.graphics.Color;
 import com.dexafree.materialList.R;
+import com.dexafree.materialList.cards.base.SimpleCard;
+import com.dexafree.materialList.interfaces.OnButtonPressListener;
 
 public class WelcomeCard extends SimpleCard {
     private String subtitle;

@@ -1,8 +1,9 @@
-package com.dexafree.materialList.cards.internal;
+package com.dexafree.materialList.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import com.dexafree.materialList.cards.SmallImageCard;
+import com.dexafree.materialList.view.base.BaseTextCardItemView;
 
 public class SmallImageCardItemView extends BaseTextCardItemView<SmallImageCard> {
     public SmallImageCardItemView(Context context) {

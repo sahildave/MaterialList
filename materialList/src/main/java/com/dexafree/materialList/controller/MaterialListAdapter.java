@@ -6,9 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.dexafree.materialList.events.BusProvider;
+import com.dexafree.materialList.interfaces.IMaterialListAdapter;
 import com.dexafree.materialList.model.Card;
 import com.dexafree.materialList.model.CardItemView;
-import com.dexafree.materialList.view.MaterialListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;

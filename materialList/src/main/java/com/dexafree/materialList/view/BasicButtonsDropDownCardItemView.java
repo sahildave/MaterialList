@@ -1,9 +1,10 @@
-package com.dexafree.materialList.cards.internal;
+package com.dexafree.materialList.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
 import com.dexafree.materialList.cards.BasicButtonsCard;
+import com.dexafree.materialList.view.base.BaseButtonsDropDownCardItemView;
 
 public class BasicButtonsDropDownCardItemView extends BaseButtonsDropDownCardItemView<BasicButtonsCard> {
     public BasicButtonsDropDownCardItemView(Context context) {

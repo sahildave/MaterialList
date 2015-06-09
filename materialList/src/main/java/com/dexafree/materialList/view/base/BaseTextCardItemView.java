@@ -1,4 +1,4 @@
-package com.dexafree.materialList.cards.internal;
+package com.dexafree.materialList.view.base;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.dexafree.materialList.cards.SimpleCard;
+import com.dexafree.materialList.cards.base.SimpleCard;
 import com.dexafree.materialList.R;
 import com.squareup.picasso.Picasso;
 

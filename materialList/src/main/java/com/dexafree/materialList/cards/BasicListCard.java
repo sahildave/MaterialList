@@ -4,6 +4,7 @@ import android.content.Context;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import com.dexafree.materialList.R;
+import com.dexafree.materialList.cards.base.SimpleCard;
 
 public class BasicListCard extends SimpleCard {
     private AdapterView.OnItemClickListener mOnItemSelectedListener;

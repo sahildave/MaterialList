@@ -1,4 +1,4 @@
-package com.dexafree.materialList.cards;
+package com.dexafree.materialList.interfaces;
 
 import android.view.View;
 import com.dexafree.materialList.model.Card;

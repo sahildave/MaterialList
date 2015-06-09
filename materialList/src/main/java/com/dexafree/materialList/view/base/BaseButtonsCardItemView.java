@@ -1,4 +1,4 @@
-package com.dexafree.materialList.cards.internal;
+package com.dexafree.materialList.view.base;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -7,11 +7,11 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.dexafree.materialList.cards.ExtendedCard;
+import com.dexafree.materialList.cards.base.ThreeButtonsCard;
 import com.dexafree.materialList.R;
-import com.dexafree.materialList.cards.OnButtonPressListener;
+import com.dexafree.materialList.interfaces.OnButtonPressListener;
 
-public abstract class BaseButtonsCardItemView<T extends ExtendedCard> extends BaseTextCardItemView<T> {
+public abstract class BaseButtonsCardItemView<T extends ThreeButtonsCard> extends BaseTextCardItemView<T> {
     private final static int DIVIDER_MARGIN_DP = 16;
 
     public BaseButtonsCardItemView(Context context) {
